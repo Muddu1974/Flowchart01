@@ -1,7 +1,7 @@
 ```mermaid
 graph TD
     A[Create Sales Order] --> B{MRP Run for Sales Order};
-    B -- Yes --> C[Generate Production Demands (Based on BOM & Routing)];
+    B -- Yes --> C[Generate Production Demands (Based on ( Routing)];
     C --> D[Convert Production Demands to Production Orders (3 Orders)];
     D --> E{Production Order Steps (10-50)};
     E -- Completed for all 3 Orders --> F[Decision: Combine Remaining Steps?];
